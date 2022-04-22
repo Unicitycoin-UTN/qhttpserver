@@ -30,9 +30,9 @@
 // Define to export or import depending if we are building or using the library.
 // QHTTPSERVER_EXPORT should only be defined when building.
 #if defined(QHTTPSERVER_EXPORT)
-#define QHTTPSERVER_API __declspec(dllexport)
+#define QHTTPSERVER_API //__declspec(dllexport)
 #else
-#define QHTTPSERVER_API __declspec(dllimport)
+#define QHTTPSERVER_API //__declspec(dllimport)
 #endif
 #else
 // Define empty for other platforms
@@ -43,9 +43,9 @@
 // Define to export or import depending if we are building or using the library.
 // QHTTPSERVER_EXPORT should only be defined when building.
 #if defined(QHTTPSERVER_EXPORT)
-#define QHTTPSERVER_API __declspec(dllexport)
+#define QHTTPSERVER_API //__declspec(dllexport)
 #else
-#define QHTTPSERVER_API __declspec(dllimport)
+#define QHTTPSERVER_API //__declspec(dllimport)
 #endif
 #else
 // Define empty for other platforms
